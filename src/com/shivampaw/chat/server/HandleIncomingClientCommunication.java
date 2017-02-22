@@ -1,21 +1,23 @@
 package com.shivampaw.chat.server;
 
+import com.sun.corba.se.impl.activation.ServerMain;
+
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.EOFException;
 import java.io.IOException;
 import java.net.Socket;
 
-public class ClientHandler implements Runnable {
+public class HandleIncomingClientCommunication implements Runnable {
     private Socket socket;
     private String name;
     private DataInputStream dis;
 
-    public ClientHandler(Socket s) throws IOException {
+    public HandleIncomingClientCommunication(Socket s) throws IOException {
         this.socket = s;
         this.dis = new DataInputStream(this.socket.getInputStream());
         this.name = dis.readUTF();
-        ServerMain.clients.add(this);
+        CreateServer.clients.add(this);
 
         writeToAllClients(this.name + " has joined.");
     }
@@ -34,16 +36,14 @@ public class ClientHandler implements Runnable {
             }
         } catch (EOFException e) {
             writeToAllClients(this.name + " has left.");
-            ServerMain.clients.remove(this);
+            CreateServer.clients.remove(this);
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
     private void writeToAllClients(String message) {
-        for (ClientHandler handler : ServerMain.clients) {
-            if(handler.equals(this))
-                continue;
+        for (HandleIncomingClientCommunication handler : CreateServer.clients) {
             try {
                 DataOutputStream dos = new DataOutputStream(handler.socket.getOutputStream());
                 dos.writeUTF(message);
@@ -51,5 +51,6 @@ public class ClientHandler implements Runnable {
                 e.printStackTrace();
             }
         }
+        System.out.println(message);
     }
 }
