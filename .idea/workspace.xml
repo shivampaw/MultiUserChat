@@ -6,20 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="62169396-d6d4-4188-879c-7d17777ef2b9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/shivampaw/chat/MainController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/shivampaw/chat/client/JoinServer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/shivampaw/chat/server/CreateServer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/shivampaw/chat/utils/Console.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/shivampaw/chat/views/CreateServer.fxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/shivampaw/chat/views/JoinServer.fxml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/shivampaw/chat/client/ClientMain.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/shivampaw/chat/server/ServerMain.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/shivampaw/chat/client/MessageHandler.java" afterPath="$PROJECT_DIR$/src/com/shivampaw/chat/client/HandleIncomingServerCommunication.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/shivampaw/chat/server/ClientHandler.java" afterPath="$PROJECT_DIR$/src/com/shivampaw/chat/server/HandleIncomingClientCommunication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/shivampaw/chat/Main.java" afterPath="$PROJECT_DIR$/src/com/shivampaw/chat/Main.java" />
-    </list>
+    <list default="true" id="62169396-d6d4-4188-879c-7d17777ef2b9" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -43,8 +30,8 @@
       <file leaf-file-name="MainController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/shivampaw/chat/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state relative-caret-position="240">
+              <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -776,12 +763,12 @@
       <workItem from="1487621880877" duration="7346000" />
       <workItem from="1487675543524" duration="3444000" />
       <workItem from="1487700291932" duration="8792000" />
-      <workItem from="1487773706007" duration="7499000" />
+      <workItem from="1487773706007" duration="7934000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27081000" />
+    <option name="totallyTimeSpent" value="27516000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="803" extended-state="6" />
@@ -1038,8 +1025,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/shivampaw/chat/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="240">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
