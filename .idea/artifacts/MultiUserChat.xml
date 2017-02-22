@@ -1,0 +1,25 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="MultiUserChat">
+    <output-path>$PROJECT_DIR$/jar</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="com.shivampaw.chat.Main" />
+        <option name="description" value="Built with JavaFX this application allows you to either start a chat server or connect to one if you know the host and port." />
+        <option name="height" value="500" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="title" value="MultiUserChat" />
+        <option name="vendor" value="" />
+        <option name="version" value="" />
+        <option name="width" value="800" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="MultiUserChat.jar">
+        <element id="module-output" name="MultiUserChat" />
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

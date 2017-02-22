@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Font?>
 
 <GridPane alignment="center" hgap="10" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" vgap="10" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.shivampaw.chat.MainController">
-      <Label alignment="CENTER" text="Client Server Application" textAlignment="CENTER" GridPane.halignment="CENTER">
+      <Label alignment="CENTER" text="Multi Client Server Chat" textAlignment="CENTER" GridPane.halignment="CENTER">
       <font>
          <Font size="25.0" />
       </font></Label>
