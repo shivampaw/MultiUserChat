@@ -8,11 +8,11 @@ import java.io.IOException;
 public class MainController {
     @FXML
     private void joinServer() throws IOException {
-        Main.parentWindow.getScene().setRoot(FXMLLoader.load(getClass().getResource("views/JoinServer.fxml")));
+        JavaFXMain.parentWindow.getScene().setRoot(FXMLLoader.load(getClass().getResource("views/JoinServer.fxml")));
     }
 
     @FXML
     private void createServer() throws IOException {
-        Main.parentWindow.getScene().setRoot(FXMLLoader.load(getClass().getResource("views/CreateServer.fxml")));
+        JavaFXMain.parentWindow.getScene().setRoot(FXMLLoader.load(getClass().getResource("views/CreateServer.fxml")));
     }
 }
