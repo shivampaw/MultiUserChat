@@ -7,20 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="62169396-d6d4-4188-879c-7d17777ef2b9" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ChatClientServer/ChatClientServer.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MultiUserChat/com/shivampaw/chat/Main.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MultiUserChat/com/shivampaw/chat/MainController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MultiUserChat/com/shivampaw/chat/client/HandleIncomingServerCommunication.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MultiUserChat/com/shivampaw/chat/client/JoinServer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MultiUserChat/com/shivampaw/chat/server/CreateServer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MultiUserChat/com/shivampaw/chat/server/HandleIncomingClientCommunication.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MultiUserChat/com/shivampaw/chat/server/HeadlessServer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MultiUserChat/com/shivampaw/chat/utils/Console.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MultiUserChat/com/shivampaw/chat/views/CreateServer.fxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MultiUserChat/com/shivampaw/chat/views/JoinServer.fxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MultiUserChat/com/shivampaw/chat/views/MainWindow.fxml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/shivampaw/chat/Main.java" afterPath="$PROJECT_DIR$/src/com/shivampaw/chat/Main.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,11 +30,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/shivampaw/chat/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="44" lean-forward="false" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
+            <state relative-caret-position="225">
+              <caret line="30" column="60" lean-forward="true" selection-start-line="30" selection-start-column="60" selection-end-line="30" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -64,11 +52,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
-              <caret line="2" column="5" lean-forward="true" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+              <caret line="2" column="5" lean-forward="false" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -161,9 +149,9 @@
         <option value="$PROJECT_DIR$/src/com/shivampaw/chat/views/MainWindow.fxml" />
         <option value="$PROJECT_DIR$/src/com/shivampaw/chat/server/HeadlessServer.java" />
         <option value="$PROJECT_DIR$/src/com/shivampaw/chat/server/CreateServer.java" />
-        <option value="$PROJECT_DIR$/src/com/shivampaw/chat/Main.java" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/com/shivampaw/chat/Main.java" />
       </list>
     </option>
   </component>
@@ -721,12 +709,12 @@
       <workItem from="1487700291932" duration="8792000" />
       <workItem from="1487773706007" duration="9256000" />
       <workItem from="1487791249907" duration="62000" />
-      <workItem from="1487794656982" duration="2581000" />
+      <workItem from="1487794656982" duration="2982000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31481000" />
+    <option name="totallyTimeSpent" value="31882000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="803" extended-state="6" />
@@ -981,16 +969,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/shivampaw/chat/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="44" lean-forward="false" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/META-INF/MANIFEST.MF">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -1002,8 +980,18 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" column="5" lean-forward="true" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+          <caret line="2" column="5" lean-forward="false" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/shivampaw/chat/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="30" column="60" lean-forward="true" selection-start-line="30" selection-start-column="60" selection-end-line="30" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

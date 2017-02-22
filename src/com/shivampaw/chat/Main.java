@@ -7,7 +7,6 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-import java.awt.*;
 import java.io.IOException;
 
 public class Main extends Application {
@@ -25,7 +24,7 @@ public class Main extends Application {
 
 
     public static void main(String[] args) {
-        if(GraphicsEnvironment.isHeadless()) {
+        if(args.length > 0 && args[0].equals("headless")) {
             try {
                 new HeadlessServer();
             } catch (IOException e) {
