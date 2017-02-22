@@ -13,8 +13,12 @@ public class HeadlessServerMain {
     private ServerSocket ss;
     private boolean running = true;
 
-    public HeadlessServerMain() throws IOException {
-        ss = new ServerSocket(0);
+    public HeadlessServerMain(int port) throws IOException {
+        try {
+            ss = new ServerSocket(port);
+        } catch (IOException e) {
+            ss = new ServerSocket(0);
+        }
 
         URL IPChecker = new URL("http://checkip.amazonaws.com");
         BufferedReader in = new BufferedReader(new InputStreamReader(IPChecker.openStream()));
