@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="MultiUserChat">
+    <output-path>$PROJECT_DIR$/jar</output-path>
+    <root id="archive" name="MultiUserChat.jar">
+      <element id="module-output" name="MultiUserChat" />
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+      </element>
+    </root>
+  </artifact>
+</component>
