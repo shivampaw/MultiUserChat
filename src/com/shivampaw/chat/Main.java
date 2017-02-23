@@ -19,10 +19,9 @@ public class Main {
                     port = 0;
                 }
             }
-
-            new CreateServer(port).initialize();
+            new CreateServer(port);
         } else {
-            JavaFXMain.main(new String[]{});
+            JavaFXMain.main();
         }
     }
 }
