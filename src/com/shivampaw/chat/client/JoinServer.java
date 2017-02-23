@@ -56,9 +56,14 @@ public class JoinServer {
 
     @FXML
     private void connect() {
-        String host = this.host.getText();
-        int port = Integer.parseInt(this.port.getText());
-        String nickname = this.nickname.getText();
+        String host = (!this.host.getText().equals("") ? this.host.getText() : "localhost");
+        int port = 0;
+        try {
+            port = Integer.parseInt(this.port.getText());
+        } catch (NumberFormatException e) {
+            System.err.println("Invalid port entered");
+        }
+        String nickname = (!this.nickname.getText().equals("") ? this.nickname.getText() : "No Name");
 
         try {
             this.socket = new Socket(host, port);
@@ -77,20 +82,23 @@ public class JoinServer {
     }
 
     public void toggleConnection() {
-        connected = !connected;
-        if(!connected) {
-            this.message.setDisable(true);
-            this.host.setDisable(false);
-            this.port.setDisable(false);
-            this.nickname.setDisable(false);
-            this.connectBtn.setDisable(false);
-        } else {
-            this.message.setDisable(false);
-            this.host.setDisable(true);
-            this.port.setDisable(true);
-            this.nickname.setDisable(true);
-            this.connectBtn.setDisable(true);
-        }
+        Platform.runLater(() -> {
+            connected = !connected;
+            if (!connected) {
+                this.message.setDisable(true);
+                this.host.setDisable(false);
+                this.port.setDisable(false);
+                this.nickname.setDisable(false);
+                this.connectBtn.setDisable(false);
+                this.connectionStatus.setText("Connect to a chat server");
+            } else {
+                this.message.setDisable(false);
+                this.host.setDisable(true);
+                this.port.setDisable(true);
+                this.nickname.setDisable(true);
+                this.connectBtn.setDisable(true);
+            }
+        });
     }
 
     @FXML

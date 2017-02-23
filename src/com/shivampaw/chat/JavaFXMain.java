@@ -1,6 +1,7 @@
 package com.shivampaw.chat;
 
 import javafx.application.Application;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -19,6 +20,11 @@ public class JavaFXMain extends Application {
         primaryStage.setTitle("Multi User Chat");
         primaryStage.setScene(new Scene(root, 800, 500));
         primaryStage.show();
+    }
+
+    @FXML
+    public void stop() {
+        System.exit(0);
     }
 
     public static void main() {

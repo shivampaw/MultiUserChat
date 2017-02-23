@@ -25,6 +25,8 @@ public class HandleIncomingServerCommunication implements Runnable {
             client.toggleConnection();
         } catch (IOException e) {
             System.err.println("Could not connect to the chat server.");
+        } catch (NullPointerException e) {
+            System.err.println("Chat server not available!");
         }
     }
 
