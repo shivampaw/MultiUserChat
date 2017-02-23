@@ -56,7 +56,11 @@ public class CreateServer {
     @FXML
     private void startServer() throws IOException {
         if(!Main.isHeadless)
-            this.serverPort = Integer.parseInt(port.getText());
+            try {
+                this.serverPort = Integer.parseInt(port.getText());
+            } catch (NumberFormatException e) {
+                this.serverPort = 0;
+            }
 
         try {
             ss = new ServerSocket(this.serverPort);
