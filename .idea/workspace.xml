@@ -6,9 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc52ea50-0858-495d-84e6-bf5aa2a1506b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/shivampaw/chat/server/CreateServer.java" afterPath="$PROJECT_DIR$/src/com/shivampaw/chat/server/CreateServer.java" />
-    </list>
+    <list default="true" id="cc52ea50-0858-495d-84e6-bf5aa2a1506b" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -617,12 +615,12 @@
       <workItem from="1487798832912" duration="2738000" />
       <workItem from="1487804421961" duration="1484000" />
       <workItem from="1487807681306" duration="1626000" />
-      <workItem from="1487858379702" duration="4978000" />
+      <workItem from="1487858379702" duration="4997000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10826000" />
+    <option name="totallyTimeSpent" value="10845000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-17" y="23" width="1105" height="803" extended-state="0" />
