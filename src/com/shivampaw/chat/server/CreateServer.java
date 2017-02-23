@@ -61,7 +61,7 @@ public class CreateServer {
         try {
             ss = new ServerSocket(this.serverPort);
         } catch (BindException e) {
-            System.err.println("Desired port was unavailable");
+            System.err.println("Desired port was unavailable. Choosing a random available one.");
             ss = new ServerSocket(0);
         }
 
