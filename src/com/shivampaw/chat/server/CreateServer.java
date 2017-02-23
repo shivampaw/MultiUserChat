@@ -1,5 +1,6 @@
 package com.shivampaw.chat.server;
 
+import com.shivampaw.chat.Main;
 import com.shivampaw.chat.utils.Console;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
@@ -9,6 +10,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintStream;
+import java.net.BindException;
 import java.net.ServerSocket;
 import java.net.URL;
 import java.util.ArrayList;
@@ -20,13 +22,30 @@ public class CreateServer {
     public static ArrayList<HandleIncomingClientCommunication> clients = new ArrayList<>();
     private boolean running = true;
     private ServerSocket ss;
+    private int port;
+
+    // This is required to support JavaFX starting.
+    public CreateServer() {
+        this.port = 0;
+    }
+
+    public CreateServer(int port) {
+        this.port = port;
+    }
 
     public void initialize() throws IOException {
-        PrintStream ps = new PrintStream(new Console(console));
-        System.setOut(ps);
-        System.setErr(ps);
+        if(!Main.isHeadless) {
+            PrintStream ps = new PrintStream(new Console(console));
+            System.setOut(ps);
+            System.setErr(ps);
+        }
 
-        ss = new ServerSocket(0);
+        try {
+            ss = new ServerSocket(this.port);
+        } catch (BindException e) {
+            System.err.println("Desired port was unavailable");
+            ss = new ServerSocket(0);
+        }
 
         URL IPChecker = new URL("http://checkip.amazonaws.com");
         BufferedReader in = new BufferedReader(new InputStreamReader(IPChecker.openStream()));
@@ -46,7 +65,6 @@ public class CreateServer {
                 }
             }
         });
-        t.setDaemon(true);
         t.start();
     }
 

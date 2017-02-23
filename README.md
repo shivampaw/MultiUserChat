@@ -7,7 +7,7 @@ To run this you need a computer with Java 8 installed. Then just download the la
 
 If you wish to run the server on a headless device you can run the jar from a console by executing `java -jar MultiUserChat.jar headless [DESIRED_PORT]` and that will run the Chat Server in the terminal instead of a JavaFX application.
 
-The desired port is the port that should be attempted first. If the port you enter is unavailable then a random one is chosen. To go straight to a random port use `0`.
+The desired port is the port that should be attempted first. If the port you enter is unavailable then a random one is chosen. To go straight to a random port use `0` or leave it blank.
 ## Troubleshooting
 If you can't get yours working globally then you probably need to port forward. Googling for "[YOUR ROUTER] port forwarding" should help you achieve this.
  
